@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foil and Sail | Premium Sailing Yacht & E-Foiling Expeditions in Mallorca</title>
-  <meta name="description" content="All-inclusive sailing adventure holiday based on a private yacht in Mallorca. E-foil directly from the boat with certified instructors in secluded bays.">
+  <meta name="description"
+    content="All-inclusive sailing adventure holiday based on a private yacht in Mallorca. E-foil directly from the boat with certified instructors in secluded bays.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <meta property="og:title" content="Foil and Sail | Premium Sailing Yacht & E-Foiling in Mallorca">
-  <meta property="og:description" content="A 50ft sailing yacht in Mallorca. An e-foil at the transom. Zero hassle. All-inclusive luxury ocean adventure for small crews of 6 to 8 guests.">
+  <meta property="og:description"
+    content="A 50ft sailing yacht in Mallorca. An e-foil at the transom. Zero hassle. All-inclusive luxury ocean adventure for small crews of 6 to 8 guests.">
   <meta property="og:image" content="https://adventure-sail.github.io/preview.png">
   <meta property="og:image:secure_url" content="https://adventure-sail.github.io/preview.png">
   <meta property="og:image:type" content="image/png">
@@ -20,7 +23,8 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Foil and Sail | Mallorca Sailing & E-Foiling">
-  <meta name="twitter:description" content="Sleep on a 50ft yacht, launch e-foils into deep turquoise bays, chef meals on anchor. No beach crowds.">
+  <meta name="twitter:description"
+    content="Sleep on a 50ft yacht, launch e-foils into deep turquoise bays, chef meals on anchor. No beach crowds.">
   <meta name="twitter:image" content="https://adventure-sail.github.io/preview.png">
   <link rel="preconnect" href="https://cdn.grona.ai">
   <script src="https://cdn.grona.ai/workspaces/6af09567bbff17cee2159ff9/main.js" async></script>
@@ -36,16 +40,28 @@
       --text-muted: #64748B;
       --border: #E2E8F0;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text-dark);
       background: var(--light-bg);
       line-height: 1.6;
     }
+
     /* Language Toggle Rules */
-    body.lang-de .lang-en { display: none !important; }
-    body.lang-en .lang-de { display: none !important; }
+    body.lang-de .lang-en {
+      display: none !important;
+    }
+
+    body.lang-en .lang-de {
+      display: none !important;
+    }
 
     header {
       background: var(--primary);
@@ -58,6 +74,7 @@
       top: 0;
       z-index: 100;
     }
+
     .logo {
       font-size: 22px;
       font-weight: 800;
@@ -66,11 +83,16 @@
       align-items: center;
       gap: 8px;
     }
-    .logo span { color: var(--accent); }
+
+    .logo span {
+      color: var(--accent);
+    }
+
     .nav-container {
       display: flex;
       align-items: center;
     }
+
     .nav-links a {
       color: #E2E8F0;
       text-decoration: none;
@@ -79,7 +101,11 @@
       font-size: 15px;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--accent); }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
     .lang-switcher {
       display: inline-flex;
       align-items: center;
@@ -89,6 +115,7 @@
       margin-left: 18px;
       border: 1px solid rgba(255, 255, 255, 0.25);
     }
+
     .lang-btn {
       background: transparent;
       border: none;
@@ -100,18 +127,24 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    .lang-btn:hover { color: white; }
+
+    .lang-btn:hover {
+      color: white;
+    }
+
     .lang-btn.active {
       background: var(--accent);
       color: #0F2337;
     }
+
     .hero {
       background: linear-gradient(rgba(15, 35, 55, 0.72), rgba(15, 35, 55, 0.88)),
-                  url('outputs/creative/scenes/00-clean-efoil.jpg') center/cover no-repeat;
+        url('outputs/creative/scenes/00-clean-efoil.jpg') center/cover no-repeat;
       color: white;
       padding: 100px 24px 90px;
       text-align: center;
     }
+
     .badge {
       display: inline-block;
       background: rgba(40, 180, 152, 0.2);
@@ -124,6 +157,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
+
     h1 {
       font-size: clamp(32px, 5vw, 54px);
       font-weight: 800;
@@ -131,6 +165,7 @@
       max-width: 860px;
       margin: 0 auto 20px;
     }
+
     .hero-sub {
       font-size: clamp(17px, 2vw, 21px);
       color: #CBD5E1;
@@ -138,6 +173,7 @@
       margin: 0 auto 36px;
       font-weight: 400;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -155,12 +191,14 @@
       border: 1px solid rgba(255, 255, 255, 0.25);
       cursor: pointer;
     }
+
     .btn:hover {
       background: linear-gradient(135deg, #42ECC7 0%, #25B89B 100%);
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(32, 167, 139, 0.5);
       color: #071725;
     }
+
     .btn-hero {
       font-size: 20px;
       font-weight: 800;
@@ -173,20 +211,24 @@
       border: 1px solid rgba(255, 255, 255, 0.45);
       position: relative;
     }
+
     .btn-hero:hover {
       background: linear-gradient(135deg, #4CF9D2 0%, #22BA97 100%);
       transform: translateY(-3px) scale(1.02);
       box-shadow: 0 16px 42px rgba(46, 216, 182, 0.65), 0 4px 8px rgba(0, 0, 0, 0.25);
       color: #051421;
     }
+
     .btn-hero .btn-arrow {
       font-size: 22px;
       transition: transform 0.2s ease;
       line-height: 1;
     }
+
     .btn-hero:hover .btn-arrow {
       transform: translateX(5px);
     }
+
     .hero-cta-container {
       display: inline-flex;
       flex-direction: column;
@@ -194,6 +236,7 @@
       gap: 12px;
       margin-top: 14px;
     }
+
     .hero-cta-trust {
       font-size: 13px;
       color: #CBD5E1;
@@ -203,11 +246,13 @@
       font-weight: 500;
       letter-spacing: 0.2px;
     }
+
     .container {
       max-width: 1040px;
       margin: 0 auto;
       padding: 60px 24px;
     }
+
     .section-title {
       text-align: center;
       font-size: 32px;
@@ -215,6 +260,7 @@
       margin-bottom: 14px;
       color: var(--primary);
     }
+
     .section-desc {
       text-align: center;
       font-size: 18px;
@@ -222,30 +268,35 @@
       max-width: 680px;
       margin: 0 auto 48px;
     }
+
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
       margin-bottom: 40px;
     }
+
     .card {
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
+
     .card h3 {
       font-size: 20px;
       margin-bottom: 12px;
       color: var(--primary);
     }
+
     .step-number {
       font-size: 36px;
       font-weight: 800;
       color: var(--accent);
       margin-bottom: 8px;
     }
+
     .comparison-table {
       width: 100%;
       border-collapse: collapse;
@@ -253,23 +304,28 @@
       background: white;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
-    .comparison-table th, .comparison-table td {
+
+    .comparison-table th,
+    .comparison-table td {
       padding: 18px 20px;
       text-align: left;
       border-bottom: 1px solid var(--border);
     }
+
     .comparison-table th {
       background: var(--primary);
       color: white;
       font-size: 16px;
     }
+
     .highlight-col {
       background: #F0FDF4;
       font-weight: 600;
       color: #166534;
     }
+
     .form-box {
       background: white;
       border: 2px solid var(--accent);
@@ -279,9 +335,11 @@
       margin: 0 auto;
       box-shadow: 0 10px 30px rgba(40, 180, 152, 0.15);
     }
+
     .form-group {
       margin-bottom: 20px;
     }
+
     .form-group label {
       display: block;
       font-weight: 600;
@@ -289,13 +347,16 @@
       margin-bottom: 6px;
       color: var(--primary);
     }
-    .form-group input, .form-group select {
+
+    .form-group input,
+    .form-group select {
       width: 100%;
       padding: 12px 16px;
       border: 1px solid var(--border);
       border-radius: 8px;
       font-size: 16px;
     }
+
     .faq-item {
       background: white;
       border: 1px solid var(--border);
@@ -303,11 +364,13 @@
       padding: 22px 24px;
       margin-bottom: 16px;
     }
+
     .faq-item h4 {
       font-size: 18px;
       margin-bottom: 8px;
       color: var(--primary);
     }
+
     footer {
       background: var(--primary);
       color: #94A3B8;
@@ -317,6 +380,7 @@
     }
   </style>
 </head>
+
 <body class="lang-en">
 
   <header>
@@ -327,11 +391,14 @@
         <a href="#why-boat"><span class="lang-en">Why The Boat</span><span class="lang-de">Warum Yacht</span></a>
         <a href="#pricing"><span class="lang-en">Pricing</span><span class="lang-de">Preise</span></a>
         <a href="#faq"><span class="lang-en">FAQ</span><span class="lang-de">FAQ</span></a>
-        <a href="#enquiry" class="btn" style="padding: 8px 18px; font-size: 14px;"><span class="lang-en">Enquire</span><span class="lang-de">Anfragen</span></a>
+        <a href="#enquiry" class="btn" style="padding: 8px 18px; font-size: 14px;"><span
+            class="lang-en">Enquire</span><span class="lang-de">Anfragen</span></a>
       </div>
       <div class="lang-switcher" role="group" aria-label="Language selection">
-        <button type="button" class="lang-btn btn-en active" onclick="setLanguage('en')" aria-label="Switch to English">EN</button>
-        <button type="button" class="lang-btn btn-de" onclick="setLanguage('de')" aria-label="Auf Deutsch umstellen">DE</button>
+        <button type="button" class="lang-btn btn-en active" onclick="setLanguage('en')"
+          aria-label="Switch to English">EN</button>
+        <button type="button" class="lang-btn btn-de" onclick="setLanguage('de')"
+          aria-label="Auf Deutsch umstellen">DE</button>
       </div>
     </div>
   </header>
@@ -342,13 +409,17 @@
       <span class="lang-en">Mallorca · Summer 2027 Season</span>
       <span class="lang-de">Mallorca · Saison Sommer 2027</span>
     </div>
-    
+
     <h1 class="lang-en">A Sailing Yacht in Mallorca. An E-Foil at the Transom. Zero Hassle.</h1>
     <h1 class="lang-de">Ihre Segelyacht auf Mallorca. Ein E-Foil am Heck. Ohne jeden Aufwand.</h1>
-    
-    <p class="hero-sub lang-en">Wake up in secluded turquoise calas, glide above crystal-clear water with certified coaches, and unwind on a private 50ft sailing yacht with a small crew of 6 to 8 like-minded guests. All-inclusive luxury adventure.</p>
-    <p class="hero-sub lang-de">Wachen Sie in einsamen türkisfarbenen Buchten auf, gleiten Sie mit zertifizierten Coaches über kristallklares Wasser und entspannen Sie auf einer 50-Fuß-Segelyacht mit 6 bis 8 Gleichgesinnten. All-inclusive-Abenteuer der Extraklasse.</p>
-    
+
+    <p class="hero-sub lang-en">Wake up in secluded turquoise calas, glide above crystal-clear water with certified
+      coaches, and unwind on a private 50ft sailing yacht with a small crew of 6 to 8 like-minded guests. All-inclusive
+      luxury adventure.</p>
+    <p class="hero-sub lang-de">Wachen Sie in einsamen türkisfarbenen Buchten auf, gleiten Sie mit zertifizierten
+      Coaches über kristallklares Wasser und entspannen Sie auf einer 50-Fuß-Segelyacht mit 6 bis 8 Gleichgesinnten.
+      All-inclusive-Abenteuer der Extraklasse.</p>
+
     <div class="hero-cta-container">
       <a href="#enquiry" class="btn btn-hero">
         <span class="lang-en">Request Trip Itinerary</span>
@@ -356,8 +427,8 @@
         <span class="btn-arrow">&rarr;</span>
       </a>
       <div class="hero-cta-trust">
-        <span class="lang-en">Strictly limited to 6 to 8 guests &middot; 15-min consultation before booking</span>
-        <span class="lang-de">Streng limitiert auf 6 bis 8 Gäste &middot; Unverbindliches 15-Minuten-Vorgespräch</span>
+        <span class="lang-en"></span>
+        <span class="lang-de"></span>
       </div>
     </div>
   </section>
@@ -365,48 +436,75 @@
   <!-- Atmosphere Visual Cards -->
   <section class="container" style="padding-top: 40px; padding-bottom: 10px;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px;">
-      
+
       <!-- Card 1: E-Foiling Flight -->
-      <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
-        <img src="outputs/creative/scenes/00-clean-efoil.jpg" alt="Direct Deepwater E-Foiling in Mallorca" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
-          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Direct Deepwater E-Foiling</h4>
-          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">E-Foilen direkt vom Heck</h4>
-          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Step from the transom platform into mirror-flat calas with certified coaches.</p>
-          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Direkt von der Badeplattform starten und mit zertifiziertem Coach gleiten.</p>
+      <div
+        style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
+        <img src="outputs/creative/scenes/00-clean-efoil.jpg" alt="Direct Deepwater E-Foiling in Mallorca"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div
+          style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
+          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Direct Deepwater E-Foiling
+          </h4>
+          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">E-Foilen direkt vom Heck
+          </h4>
+          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Step from the transom platform into
+            mirror-flat calas with certified coaches.</p>
+          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Direkt von der Badeplattform starten
+            und mit zertifiziertem Coach gleiten.</p>
         </div>
       </div>
 
       <!-- Card 2: 50ft Yacht Basecamp -->
-      <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
-        <img src="outputs/creative/scenes/05-jumping-from-yacht.png" alt="Sailing Yacht Basecamp in Mallorca" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
-          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">The 50ft Yacht Basecamp</h4>
+      <div
+        style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
+        <img src="outputs/creative/scenes/05-jumping-from-yacht.png" alt="Sailing Yacht Basecamp in Mallorca"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div
+          style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
+          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">The 50ft Yacht Basecamp
+          </h4>
           <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Die 50-Fuß Segelyacht</h4>
-          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Anchor in wild limestone calas. Sleep in private cabins away from the crowds.</p>
-          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Vor Anker in wilden Felsbuchten. Erholsamer Schlaf in privaten Kabinen.</p>
+          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Anchor in wild limestone calas. Sleep
+            in private cabins away from the crowds.</p>
+          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Vor Anker in wilden Felsbuchten.
+            Erholsamer Schlaf in privaten Kabinen.</p>
         </div>
       </div>
 
       <!-- Card 3: Dinner on Deck -->
-      <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
-        <img src="outputs/creative/scenes/02-dinner-on-deck.png" alt="Mediterranean Dinner on Deck" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
-          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Sunset Dinners & Local Wine</h4>
-          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Abendessen & Balearische Weine</h4>
-          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Chef-prepared Mediterranean seafood and local wines under cockpit lights.</p>
-          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Frische Spezialitäten und balearische Weine im Abendlicht an Deck.</p>
+      <div
+        style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
+        <img src="outputs/creative/scenes/02-dinner-on-deck.png" alt="Mediterranean Dinner on Deck"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div
+          style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
+          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Sunset Dinners & Local Wine
+          </h4>
+          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Abendessen & Balearische
+            Weine</h4>
+          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Chef-prepared Mediterranean seafood and
+            local wines under cockpit lights.</p>
+          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Frische Spezialitäten und balearische
+            Weine im Abendlicht an Deck.</p>
         </div>
       </div>
 
       <!-- Card 4: Coastal Hikes -->
-      <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
-        <img src="outputs/creative/scenes/04-group-overlooking-bay.png" alt="Coastal Hikes in Mallorca" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
-          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Coastal Hikes & Secluded Calas</h4>
-          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Küstenpfade & Einsame Buchten</h4>
-          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Explore Tramuntana clifftops with panoramic views of your yacht at anchor.</p>
-          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Wandern über wilde Klippen mit Blick auf die eigene Segelyacht.</p>
+      <div
+        style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); height: 280px;">
+        <img src="outputs/creative/scenes/04-group-overlooking-bay.png" alt="Coastal Hikes in Mallorca"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div
+          style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(15, 35, 55, 0.92)); padding: 18px; color: white;">
+          <h4 class="lang-en" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Coastal Hikes & Secluded
+            Calas</h4>
+          <h4 class="lang-de" style="font-size: 17px; font-weight: 700; margin-bottom: 4px;">Küstenpfade & Einsame
+            Buchten</h4>
+          <p class="lang-en" style="font-size: 12px; color: #CBD5E1; margin: 0;">Explore Tramuntana clifftops with
+            panoramic views of your yacht at anchor.</p>
+          <p class="lang-de" style="font-size: 12px; color: #CBD5E1; margin: 0;">Wandern über wilde Klippen mit Blick
+            auf die eigene Segelyacht.</p>
         </div>
       </div>
 
@@ -417,31 +515,39 @@
   <section id="how-it-works" class="container">
     <h2 class="section-title lang-en">How It Works</h2>
     <h2 class="section-title lang-de">Wie es funktioniert</h2>
-    
-    <p class="section-desc lang-en">We took the stress out of ocean adventure travel. No gear hauling, no beach crowds, no complex planning.</p>
-    <p class="section-desc lang-de">Echter Wassersport ohne Organisationsstress. Keine Akkus schleppen, keine überfüllten Strände.</p>
-    
+
+    <p class="section-desc lang-en">We took the stress out of ocean adventure travel. No gear hauling, no beach crowds,
+      no complex planning.</p>
+    <p class="section-desc lang-de">Echter Wassersport ohne Organisationsstress. Keine Akkus schleppen, keine
+      überfüllten Strände.</p>
+
     <div class="grid-3">
       <div class="card">
         <div class="step-number">01</div>
         <h3 class="lang-en">Step Aboard in Palma</h3>
         <h3 class="lang-de">An Bord in Palma</h3>
-        <p class="lang-en">Arrive in Mallorca and board our modern 50-foot expedition cruising yacht. Settle into your private cabin and meet your skipper, certified e-foil coach, and small group of fellow guests.</p>
-        <p class="lang-de">Ankunft auf Mallorca und Einschiffen auf unserer modernen 50-Fuß-Cruising-Yacht. Beziehen Sie Ihre private Kabine und lernen Sie Skipper, E-Foil-Coach und Ihre Crew kennen.</p>
+        <p class="lang-en">Arrive in Mallorca and board our modern 50-foot expedition cruising yacht. Settle into your
+          private cabin and meet your skipper, certified e-foil coach, and small group of fellow guests.</p>
+        <p class="lang-de">Ankunft auf Mallorca und Einschiffen auf unserer modernen 50-Fuß-Cruising-Yacht. Beziehen Sie
+          Ihre private Kabine und lernen Sie Skipper, E-Foil-Coach und Ihre Crew kennen.</p>
       </div>
       <div class="card">
         <div class="step-number">02</div>
         <h3 class="lang-en">Launch from the Transom</h3>
         <h3 class="lang-de">Start von der Badeplattform</h3>
-        <p class="lang-en">Step directly onto your e-foil from the yacht's teak swim platform into calm, deep turquoise water. Certified coaches guide you from balance basics to continuous flight on Day 1.</p>
-        <p class="lang-de">Steigen Sie direkt von der Teak-Badeplattform der Yacht aufs E-Foil in ruhiges, tiefes Wasser. Zertifizierte Coaches begleiten Sie von den ersten Schritten bis zum sicheren Schweben an Tag 1.</p>
+        <p class="lang-en">Step directly onto your e-foil from the yacht's teak swim platform into calm, deep turquoise
+          water. Certified coaches guide you from balance basics to continuous flight on Day 1.</p>
+        <p class="lang-de">Steigen Sie direkt von der Teak-Badeplattform der Yacht aufs E-Foil in ruhiges, tiefes
+          Wasser. Zertifizierte Coaches begleiten Sie von den ersten Schritten bis zum sicheren Schweben an Tag 1.</p>
       </div>
       <div class="card">
         <div class="step-number">03</div>
         <h3 class="lang-en">Sail, Dine & Recharge</h3>
         <h3 class="lang-de">Segeln, Genießen & Auftanken</h3>
-        <p class="lang-en">Enjoy freshly prepared Mediterranean meals on anchor, coastal hiking excursions, and sunset sailing between secluded bays. Freshly charged batteries are always waiting below deck.</p>
-        <p class="lang-de">Frisch zubereitete mediterrane Küche vor Anker, Küstenwanderungen und Segeln im Abendlicht. Voll geladene Akkus warten stets im Salon unter Deck.</p>
+        <p class="lang-en">Enjoy freshly prepared Mediterranean meals on anchor, coastal hiking excursions, and sunset
+          sailing between secluded bays. Freshly charged batteries are always waiting below deck.</p>
+        <p class="lang-de">Frisch zubereitete mediterrane Küche vor Anker, Küstenwanderungen und Segeln im Abendlicht.
+          Voll geladene Akkus warten stets im Salon unter Deck.</p>
       </div>
     </div>
   </section>
@@ -450,7 +556,7 @@
   <section id="why-boat" class="container" style="padding-top: 0;">
     <h2 class="section-title lang-en">Why The Boat Beats The Beach</h2>
     <h2 class="section-title lang-de">Warum Yacht statt Strand</h2>
-    
+
     <p class="section-desc lang-en">Comparing Foil and Sail to standard beach rentals and traditional holidays.</p>
     <p class="section-desc lang-de">Der direkte Vergleich zu herkömmlichen Strand-Verleihern und Hotelurlauben.</p>
 
@@ -458,35 +564,51 @@
       <thead>
         <tr>
           <th><span class="lang-en">Experience Factor</span><span class="lang-de">Erlebnis-Faktor</span></th>
-          <th><span class="lang-en">Beach E-Foil Rentals</span><span class="lang-de">E-Foil Verleih am Strand</span></th>
-          <th class="highlight-col"><span class="lang-en">Foil & Sail Yacht Adventure</span><span class="lang-de">Foil & Sail Yacht-Abenteuer</span></th>
+          <th><span class="lang-en">Beach E-Foil Rentals</span><span class="lang-de">E-Foil Verleih am Strand</span>
+          </th>
+          <th class="highlight-col"><span class="lang-en">Foil & Sail Yacht Adventure</span><span class="lang-de">Foil &
+              Sail Yacht-Abenteuer</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong><span class="lang-en">Launching Spot</span><span class="lang-de">Startplatz</span></strong></td>
-          <td><span class="lang-en">Crowded public beaches, shallow rocks, swimmers</span><span class="lang-de">Überfüllte Strände, gefährliche Untiefen, Schwimmer</span></td>
-          <td class="highlight-col"><span class="lang-en">Private, deepwater turquoise calas</span><span class="lang-de">Private, tiefe türkisfarbene Buchten</span></td>
+          <td><span class="lang-en">Crowded public beaches, shallow rocks, swimmers</span><span
+              class="lang-de">Überfüllte Strände, gefährliche Untiefen, Schwimmer</span></td>
+          <td class="highlight-col"><span class="lang-en">Private, deepwater turquoise calas</span><span
+              class="lang-de">Private, tiefe türkisfarbene Buchten</span></td>
         </tr>
         <tr>
-          <td><strong><span class="lang-en">Battery Logistics</span><span class="lang-de">Akku-Logistik</span></strong></td>
-          <td><span class="lang-en">Heavy 30kg batteries to carry, limited runtime</span><span class="lang-de">30kg schwere Akkus durch den Sand tragen</span></td>
-          <td class="highlight-col"><span class="lang-en">Unlimited charged swaps from onboard station</span><span class="lang-de">Unbegrenzte Akku-Wechsel direkt an Bord</span></td>
+          <td><strong><span class="lang-en">Battery Logistics</span><span class="lang-de">Akku-Logistik</span></strong>
+          </td>
+          <td><span class="lang-en">Heavy 30kg batteries to carry, limited runtime</span><span class="lang-de">30kg
+              schwere Akkus durch den Sand tragen</span></td>
+          <td class="highlight-col"><span class="lang-en">Unlimited charged swaps from onboard station</span><span
+              class="lang-de">Unbegrenzte Akku-Wechsel direkt an Bord</span></td>
         </tr>
         <tr>
-          <td><strong><span class="lang-en">Accommodation & Food</span><span class="lang-de">Unterkunft & Verpflegung</span></strong></td>
-          <td><span class="lang-en">Separate hotel, taxis, finding restaurants</span><span class="lang-de">Separates Hotel, Taxifahrten, Restaurantsuche</span></td>
-          <td class="highlight-col"><span class="lang-en">Private cabin aboard + chef-prepared meals</span><span class="lang-de">Private Kabine an Bord + Bordkoch</span></td>
+          <td><strong><span class="lang-en">Accommodation & Food</span><span class="lang-de">Unterkunft &
+                Verpflegung</span></strong></td>
+          <td><span class="lang-en">Separate hotel, taxis, finding restaurants</span><span class="lang-de">Separates
+              Hotel, Taxifahrten, Restaurantsuche</span></td>
+          <td class="highlight-col"><span class="lang-en">Private cabin aboard + chef-prepared meals</span><span
+              class="lang-de">Private Kabine an Bord + Bordkoch</span></td>
         </tr>
         <tr>
-          <td><strong><span class="lang-en">Group Dynamic</span><span class="lang-de">Gruppendynamik</span></strong></td>
-          <td><span class="lang-en">Solo or random beach crowds</span><span class="lang-de">Zufällige Strandtouristen</span></td>
-          <td class="highlight-col"><span class="lang-en">5 to 8 like-minded, screened active travelers</span><span class="lang-de">5 bis 8 gleichgesinnte, abgestimmte Gäste</span></td>
+          <td><strong><span class="lang-en">Group Dynamic</span><span class="lang-de">Gruppendynamik</span></strong>
+          </td>
+          <td><span class="lang-en">Solo or random beach crowds</span><span class="lang-de">Zufällige
+              Strandtouristen</span></td>
+          <td class="highlight-col"><span class="lang-en">5 to 8 like-minded, screened active travelers</span><span
+              class="lang-de">5 bis 8 gleichgesinnte, abgestimmte Gäste</span></td>
         </tr>
         <tr>
-          <td><strong><span class="lang-en">Sailing & Exploration</span><span class="lang-de">Segeln & Erkundung</span></strong></td>
-          <td><span class="lang-en">None (stuck in one bay)</span><span class="lang-de">Keine (fest in einer einzigen Bucht)</span></td>
-          <td class="highlight-col"><span class="lang-en">Full island navigation and coastal hikes</span><span class="lang-de">Inselnavigation und Küstenwanderungen</span></td>
+          <td><strong><span class="lang-en">Sailing & Exploration</span><span class="lang-de">Segeln &
+                Erkundung</span></strong></td>
+          <td><span class="lang-en">None (stuck in one bay)</span><span class="lang-de">Keine (fest in einer einzigen
+              Bucht)</span></td>
+          <td class="highlight-col"><span class="lang-en">Full island navigation and coastal hikes</span><span
+              class="lang-de">Inselnavigation und Küstenwanderungen</span></td>
         </tr>
       </tbody>
     </table>
@@ -496,20 +618,26 @@
   <section id="pricing" class="container" style="padding-top: 0;">
     <h2 class="section-title lang-en">All-Inclusive Voyage Packages</h2>
     <h2 class="section-title lang-de">All-Inclusive Reisepakete</h2>
-    
-    <p class="section-desc lang-en">Strictly limited to 6 to 8 guests per voyage. Everything is included except flights to Mallorca.</p>
-    <p class="section-desc lang-de">Streng limitiert auf 6 bis 8 Gäste pro Reise. Alles inklusive außer Fluganreise nach Mallorca.</p>
+
+    <p class="section-desc lang-en">Strictly limited to 6 to 8 guests per voyage. Everything is included except flights
+      to Mallorca.</p>
+    <p class="section-desc lang-de">Streng limitiert auf 6 bis 8 Gäste pro Reise. Alles inklusive außer Fluganreise nach
+      Mallorca.</p>
 
     <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
       <div class="card" style="border-top: 4px solid var(--primary);">
         <h3 class="lang-en">Single Cabin Berth</h3>
         <h3 class="lang-de">Einzelkabine-Koje</h3>
-        
-        <div style="font-size: 32px; font-weight: 800; color: var(--primary); margin: 12px 0;">€4,000 <span style="font-size: 16px; font-weight: 400; color: var(--text-muted);"><span class="lang-en">/ person</span><span class="lang-de">/ Person</span></span></div>
-        
-        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 20px;">Dedicated private single cabin. Perfect for solo travelers seeking an active, like-minded crew without single supplements.</p>
-        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 20px;">Eigene private Einzelkabine. Perfekt für Alleinreisende ohne Einzelzimmerzuschlag mit einer aktiven Crew.</p>
-        
+
+        <div style="font-size: 32px; font-weight: 800; color: var(--primary); margin: 12px 0;">€4,000 <span
+            style="font-size: 16px; font-weight: 400; color: var(--text-muted);"><span class="lang-en">/
+              person</span><span class="lang-de">/ Person</span></span></div>
+
+        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 20px;">Dedicated private single cabin.
+          Perfect for solo travelers seeking an active, like-minded crew without single supplements.</p>
+        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 20px;">Eigene private Einzelkabine. Perfekt
+          für Alleinreisende ohne Einzelzimmerzuschlag mit einer aktiven Crew.</p>
+
         <ul class="lang-en" style="padding-left: 20px; margin-bottom: 24px; font-size: 15px;">
           <li>Private single cabin berth</li>
           <li>Unlimited e-foil flights & coaching</li>
@@ -522,7 +650,7 @@
           <li>Alle Mahlzeiten frisch an Bord zubereitet</li>
           <li>Yachtbetrieb, Treibstoff & Hafengebühren</li>
         </ul>
-        
+
         <a href="#enquiry" class="btn" style="width: 100%; text-align: center;">
           <span class="lang-en">Request Single Berth</span>
           <span class="lang-de">Einzelkabine anfragen</span>
@@ -530,19 +658,24 @@
       </div>
 
       <div class="card" style="border-top: 4px solid var(--accent); position: relative;">
-        <div style="position: absolute; top: -14px; right: 20px; background: var(--accent); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
+        <div
+          style="position: absolute; top: -14px; right: 20px; background: var(--accent); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; text-transform: uppercase;">
           <span class="lang-en">Most Popular</span>
           <span class="lang-de">Beliebteste Wahl</span>
         </div>
-        
+
         <h3 class="lang-en">Shared Double Cabin</h3>
         <h3 class="lang-de">Geteilte Doppelkabine</h3>
-        
-        <div style="font-size: 32px; font-weight: 800; color: var(--accent); margin: 12px 0;">€7,000 <span style="font-size: 16px; font-weight: 400; color: var(--text-muted);"><span class="lang-en">/ cabin (€3.5k per person)</span><span class="lang-de">/ Kabine (€3.500 p.P.)</span></span></div>
-        
-        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 20px;">Spacious double cabin with double berth. Ideal for couples or two friends traveling together.</p>
-        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 20px;">Großzügige Doppelkabine mit Doppelbett. Ideal für Paare oder zwei Freunde, die gemeinsam reisen.</p>
-        
+
+        <div style="font-size: 32px; font-weight: 800; color: var(--accent); margin: 12px 0;">€7,000 <span
+            style="font-size: 16px; font-weight: 400; color: var(--text-muted);"><span class="lang-en">/ cabin (€3.5k
+              per person)</span><span class="lang-de">/ Kabine (€3.500 p.P.)</span></span></div>
+
+        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 20px;">Spacious double cabin with double
+          berth. Ideal for couples or two friends traveling together.</p>
+        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 20px;">Großzügige Doppelkabine mit
+          Doppelbett. Ideal für Paare oder zwei Freunde, die gemeinsam reisen.</p>
+
         <ul class="lang-en" style="padding-left: 20px; margin-bottom: 24px; font-size: 15px;">
           <li>Private double cabin for two guests</li>
           <li>Two dedicated coaching tracks</li>
@@ -555,7 +688,7 @@
           <li>Bordverpflegung & balearische Weine</li>
           <li>Volle Sicherheits- und Tenderboot-Unterstützung</li>
         </ul>
-        
+
         <a href="#enquiry" class="btn" style="width: 100%; text-align: center;">
           <span class="lang-en">Request Double Cabin</span>
           <span class="lang-de">Doppelkabine anfragen</span>
@@ -568,29 +701,45 @@
   <section id="story" class="container" style="padding-top: 0;">
     <h2 class="section-title lang-en">Expedition Spotlight: 7 Days in Mallorca Waters</h2>
     <h2 class="section-title lang-de">Expeditions-Einblick: 7 Tage auf Mallorca</h2>
-    
-    <p class="section-desc lang-en">What a typical week on board looks like: from the secluded coves of Cabrera to the cliffs of the Tramuntana.</p>
-    <p class="section-desc lang-de">Wie eine typische Woche an Bord aussieht: von den Buchten Cabreras bis zu den Klippen der Tramuntana.</p>
-    
-    <div class="card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; align-items: center;">
+
+    <p class="section-desc lang-en">What a typical week on board looks like: from the secluded coves of Cabrera to the
+      cliffs of the Tramuntana.</p>
+    <p class="section-desc lang-de">Wie eine typische Woche an Bord aussieht: von den Buchten Cabreras bis zu den
+      Klippen der Tramuntana.</p>
+
+    <div class="card"
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; align-items: center;">
       <div>
-        <h3 class="lang-en" style="font-size: 22px; color: var(--primary); margin-bottom: 12px;">A Floating Sanctuary with Real Flight</h3>
-        <h3 class="lang-de" style="font-size: 22px; color: var(--primary); margin-bottom: 12px;">Ein schwimmendes Refugium mit echtem Fluggefühl</h3>
-        
-        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 14px;">"We anchored on the south coast of Mallorca in a limestone bay with water so clear you could see the anchor chain resting in 8 meters of white sand. Within 20 minutes of waking up, our instructor had two e-foils floating at the swim platform."</p>
-        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 14px;">"Wir ankerten an der Südküste Mallorcas in einer Bucht, in der man die Ankerkette in 8 Metern Tiefe glasklar sehen konnte. Zwanzig Minuten nach dem Aufwachen hatte unser Coach zwei Boards startklar an der Badeplattform."</p>
-        
-        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 16px;">Whether you join as a solo traveler looking for an active, social crew or as a couple seeking a private double cabin, the rhythm of sailing and morning flight creates an unforgettable sense of freedom.</p>
-        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 16px;">Ob als Alleinreisender für eine motivierte Crew oder als Paar in der privaten Doppelkabine: der Rhythmus aus Segeln und Fliegen über dem Wasser schenkt ein unvergleichliches Freiheitsgefühl.</p>
-        
+        <h3 class="lang-en" style="font-size: 22px; color: var(--primary); margin-bottom: 12px;">A Floating Sanctuary
+          with Real Flight</h3>
+        <h3 class="lang-de" style="font-size: 22px; color: var(--primary); margin-bottom: 12px;">Ein schwimmendes
+          Refugium mit echtem Fluggefühl</h3>
+
+        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 14px;">"We anchored on the south coast of
+          Mallorca in a limestone bay with water so clear you could see the anchor chain resting in 8 meters of white
+          sand. Within 20 minutes of waking up, our instructor had two e-foils floating at the swim platform."</p>
+        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 14px;">"Wir ankerten an der Südküste
+          Mallorcas in einer Bucht, in der man die Ankerkette in 8 Metern Tiefe glasklar sehen konnte. Zwanzig Minuten
+          nach dem Aufwachen hatte unser Coach zwei Boards startklar an der Badeplattform."</p>
+
+        <p class="lang-en" style="color: var(--text-muted); margin-bottom: 16px;">Whether you join as a solo traveler
+          looking for an active, social crew or as a couple seeking a private double cabin, the rhythm of sailing and
+          morning flight creates an unforgettable sense of freedom.</p>
+        <p class="lang-de" style="color: var(--text-muted); margin-bottom: 16px;">Ob als Alleinreisender für eine
+          motivierte Crew oder als Paar in der privaten Doppelkabine: der Rhythmus aus Segeln und Fliegen über dem
+          Wasser schenkt ein unvergleichliches Freiheitsgefühl.</p>
+
         <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 600; color: var(--accent);">
-          <div><span class="lang-en">✓ 2x Daily Foil Sessions</span><span class="lang-de">✓ 2x tägliche Foil-Sessions</span></div>
-          <div><span class="lang-en">✓ 50+ Nautical Miles Sailed</span><span class="lang-de">✓ 50+ Seemeilen gesegelt</span></div>
+          <div><span class="lang-en">✓ 2x Daily Foil Sessions</span><span class="lang-de">✓ 2x tägliche
+              Foil-Sessions</span></div>
+          <div><span class="lang-en">✓ 50+ Nautical Miles Sailed</span><span class="lang-de">✓ 50+ Seemeilen
+              gesegelt</span></div>
           <div><span class="lang-en">✓ Max 8 Guests</span><span class="lang-de">✓ Max. 8 Gäste</span></div>
         </div>
       </div>
       <div>
-        <img src="outputs/creative/scenes/00-clean-efoil.jpg" alt="Foil and Sail Experience" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
+        <img src="outputs/creative/scenes/00-clean-efoil.jpg" alt="Foil and Sail Experience"
+          style="width: 100%; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
       </div>
     </div>
   </section>
@@ -599,63 +748,88 @@
   <section id="faq" class="container" style="padding-top: 0;">
     <h2 class="section-title lang-en">Frequently Asked Questions</h2>
     <h2 class="section-title lang-de">Häufig gestellte Fragen</h2>
-    
+
     <p class="section-desc lang-en">Clear answers to the most common questions before applying.</p>
     <p class="section-desc lang-de">Klare Antworten auf die wichtigsten Fragen vor Ihrer Buchungsanfrage.</p>
 
     <div class="faq-item">
       <h4 class="lang-en">Do I need prior e-foiling or sailing experience?</h4>
       <h4 class="lang-de">Benötige ich Vorkenntnisse im Segeln oder E-Foilen?</h4>
-      <p class="lang-en">No prior experience is necessary. E-foiling is significantly gentler on the body than surfing because the electric motor gives you continuous, smooth propulsion. Our certified coaches have complete beginners standing and flying comfortably within 90 minutes.</p>
-      <p class="lang-de">Nein, keinerlei Vorkenntnisse erforderlich. E-Foilen schont Gelenke und Muskeln deutlich mehr als klassisches Wellenreiten. Unser zertifizierter Instruktor bringt auch Anfänger innerhalb von 90 Minuten sicher zum ersten stabilen Flug.</p>
+      <p class="lang-en">No prior experience is necessary. E-foiling is significantly gentler on the body than surfing
+        because the electric motor gives you continuous, smooth propulsion. Our certified coaches have complete
+        beginners standing and flying comfortably within 90 minutes.</p>
+      <p class="lang-de">Nein, keinerlei Vorkenntnisse erforderlich. E-Foilen schont Gelenke und Muskeln deutlich mehr
+        als klassisches Wellenreiten. Unser zertifizierter Instruktor bringt auch Anfänger innerhalb von 90 Minuten
+        sicher zum ersten stabilen Flug.</p>
     </div>
 
     <div class="faq-item">
       <h4 class="lang-en">What does the 15-minute screening conversation involve?</h4>
       <h4 class="lang-de">Was beinhaltet das 15-minütige Vorgespräch?</h4>
-      <p class="lang-en">Because our departures are small (5 to 8 guests maximum), we host a brief 15-minute conversation with every prospective guest before accepting a deposit. We use this to understand your expectations, answer questions about the boat, and pair compatible crews.</p>
-      <p class="lang-de">Da unsere Gruppen bewusst klein gehalten werden (max. 5 bis 8 Gäste), führen wir mit jedem Gast vor der Buchung ein kurzes 15-Minuten-Gespräch. So stellen wir sicher, dass die Erwartungen an Sport, Entspannung und Crew-Atmosphäre perfekt zusammenpassen.</p>
+      <p class="lang-en">Because our departures are small (5 to 8 guests maximum), we host a brief 15-minute
+        conversation with every prospective guest before accepting a deposit. We use this to understand your
+        expectations, answer questions about the boat, and pair compatible crews.</p>
+      <p class="lang-de">Da unsere Gruppen bewusst klein gehalten werden (max. 5 bis 8 Gäste), führen wir mit jedem Gast
+        vor der Buchung ein kurzes 15-Minuten-Gespräch. So stellen wir sicher, dass die Erwartungen an Sport,
+        Entspannung und Crew-Atmosphäre perfekt zusammenpassen.</p>
     </div>
 
     <div class="faq-item">
       <h4 class="lang-en">What happens if conditions get choppy or windy?</h4>
       <h4 class="lang-de">Was passiert bei Wind oder Wellengang?</h4>
-      <p class="lang-en">Mallorca offers dozens of protected, deepwater calas on different sides of the island. Our skippers choose sheltered anchorages with mirror-flat water for morning foil flights, and use the afternoon sea breezes for open-water sailing.</p>
-      <p class="lang-de">Mallorca bietet auf allen Seiten geschützte Buchten. Unsere erfahrenen Skipper wählen stets Lee-Buchten mit spiegelglattem Wasser für die Flug-Sessions und nutzen die nachmittägliche Brise zum entspannten Segeln.</p>
+      <p class="lang-en">Mallorca offers dozens of protected, deepwater calas on different sides of the island. Our
+        skippers choose sheltered anchorages with mirror-flat water for morning foil flights, and use the afternoon sea
+        breezes for open-water sailing.</p>
+      <p class="lang-de">Mallorca bietet auf allen Seiten geschützte Buchten. Unsere erfahrenen Skipper wählen stets
+        Lee-Buchten mit spiegelglattem Wasser für die Flug-Sessions und nutzen die nachmittägliche Brise zum entspannten
+        Segeln.</p>
     </div>
 
     <div class="faq-item">
       <h4 class="lang-en">What about seasickness and comfort aboard?</h4>
       <h4 class="lang-de">Wie steht es um Seekrankheit und Komfort an Bord?</h4>
-      <p class="lang-en">Modern 50-foot cruising yachts are heavy, stable ocean vessels. We spend our nights anchored in calm, protected bays with zero ocean swell. For daytime sailing, we carry premium prevention remedies and keep coastal legs manageable.</p>
-      <p class="lang-de">Moderne 50-Fuß-Cruiser liegen extrem stabil im Wasser. Die Nächte verbringen wir in geschützten Buchten ohne Dünung. Für Tagesschläge haben wir bewährte Mittel an Bord und passen die Etappen an.</p>
+      <p class="lang-en">Modern 50-foot cruising yachts are heavy, stable ocean vessels. We spend our nights anchored in
+        calm, protected bays with zero ocean swell. For daytime sailing, we carry premium prevention remedies and keep
+        coastal legs manageable.</p>
+      <p class="lang-de">Moderne 50-Fuß-Cruiser liegen extrem stabil im Wasser. Die Nächte verbringen wir in geschützten
+        Buchten ohne Dünung. Für Tagesschläge haben wir bewährte Mittel an Bord und passen die Etappen an.</p>
     </div>
 
     <div class="faq-item">
       <h4 class="lang-en">What meals and drinks are included?</h4>
       <h4 class="lang-de">Welche Mahlzeiten und Getränke sind inklusive?</h4>
-      <p class="lang-en">All-inclusive chef-prepared breakfasts, fresh Mediterranean lunches on anchor, snacks, and selected local Balearic wines are included. You can enjoy quiet dinners on deck under the stars or step ashore with the crew at coastal harbors.</p>
-      <p class="lang-de">Umfassende Bordverpflegung mit frischem Frühstück, leichtem mediterranem Mittagessen vor Anker, Snacks und ausgewählten balearischen Weinen. Abends kochen wir an Bord oder besuchen urige Hafenrestaurants an Land.</p>
+      <p class="lang-en">All-inclusive chef-prepared breakfasts, fresh Mediterranean lunches on anchor, snacks, and
+        selected local Balearic wines are included. You can enjoy quiet dinners on deck under the stars or step ashore
+        with the crew at coastal harbors.</p>
+      <p class="lang-de">Umfassende Bordverpflegung mit frischem Frühstück, leichtem mediterranem Mittagessen vor Anker,
+        Snacks und ausgewählten balearischen Weinen. Abends kochen wir an Bord oder besuchen urige Hafenrestaurants an
+        Land.</p>
     </div>
   </section>
 
   <!-- Screening Form -->
   <section id="enquiry" class="container" style="padding-top: 0;">
     <div class="form-box">
-      <h3 class="lang-en" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 8px;">Request Your Voyage Itinerary</h3>
-      <h3 class="lang-de" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 8px;">Reiseroute & Screening anfordern</h3>
-      
-      <p class="lang-en" style="text-align: center; color: var(--text-muted); margin-bottom: 28px;">Complete this brief screening form. We will send the full route dossier and follow up to schedule your 15-minute consultation.</p>
-      <p class="lang-de" style="text-align: center; color: var(--text-muted); margin-bottom: 28px;">Füllen Sie dieses kurze Formular aus. Wir senden Ihnen das Expeditions-Dossier zu und vereinbaren Ihr 15-minütiges Gespräch.</p>
-      
-      <form onsubmit="event.preventDefault(); alert(document.body.classList.contains('lang-de') ? 'Vielen Dank! Ihre Anfrage wurde übermittelt. Wir melden uns innerhalb von 24 Stunden für das Vorgespräch.' : 'Thank you! Your itinerary request has been submitted. Our team will contact you within 24 hours.');">
-        
+      <h3 class="lang-en" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 8px;">
+        Request Your Voyage Itinerary</h3>
+      <h3 class="lang-de" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 8px;">
+        Reiseroute & Screening anfordern</h3>
+
+      <p class="lang-en" style="text-align: center; color: var(--text-muted); margin-bottom: 28px;">Complete this brief
+        screening form. We will send the full route dossier and follow up to schedule your 15-minute consultation.</p>
+      <p class="lang-de" style="text-align: center; color: var(--text-muted); margin-bottom: 28px;">Füllen Sie dieses
+        kurze Formular aus. Wir senden Ihnen das Expeditions-Dossier zu und vereinbaren Ihr 15-minütiges Gespräch.</p>
+
+      <form
+        onsubmit="event.preventDefault(); alert(document.body.classList.contains('lang-de') ? 'Vielen Dank! Ihre Anfrage wurde übermittelt. Wir melden uns innerhalb von 24 Stunden für das Vorgespräch.' : 'Thank you! Your itinerary request has been submitted. Our team will contact you within 24 hours.');">
+
         <div class="form-group">
           <label id="full-name-label" for="full-name">
             <span class="lang-en">Full Name</span>
             <span class="lang-de">Vollständiger Name</span>
           </label>
-          <input type="text" id="full-name" name="full_name" placeholder="Markus Weber" aria-label="Full Name" aria-labelledby="full-name-label" aria-required="true" required>
+          <input type="text" id="full-name" name="full_name" placeholder="Markus Weber" aria-label="Full Name"
+            aria-labelledby="full-name-label" aria-required="true" required>
         </div>
 
         <div class="form-group">
@@ -663,7 +837,8 @@
             <span class="lang-en">Email Address</span>
             <span class="lang-de">E-Mail-Adresse</span>
           </label>
-          <input type="email" id="email-address" name="email" placeholder="markus@example.com" aria-label="Email Address" aria-labelledby="email-address-label" aria-required="true" required>
+          <input type="email" id="email-address" name="email" placeholder="markus@example.com"
+            aria-label="Email Address" aria-labelledby="email-address-label" aria-required="true" required>
         </div>
 
         <div class="form-group">
@@ -671,7 +846,8 @@
             <span class="lang-en">Phone Number (for SMS confirmation)</span>
             <span class="lang-de">Telefonnummer (für Rückfragen)</span>
           </label>
-          <input type="tel" id="phone-number" name="phone" placeholder="+49 170 1234567" aria-label="Phone Number" aria-labelledby="phone-number-label" aria-required="true" required>
+          <input type="tel" id="phone-number" name="phone" placeholder="+49 170 1234567" aria-label="Phone Number"
+            aria-labelledby="phone-number-label" aria-required="true" required>
         </div>
 
         <div class="form-group">
@@ -679,7 +855,8 @@
             <span class="lang-en">Preferred Cabin Setup</span>
             <span class="lang-de">Bevorzugte Kabinenwahl</span>
           </label>
-          <select id="cabin-setup" name="cabin_setup" aria-label="Preferred Cabin Setup" aria-labelledby="cabin-setup-label" aria-required="true" required>
+          <select id="cabin-setup" name="cabin_setup" aria-label="Preferred Cabin Setup"
+            aria-labelledby="cabin-setup-label" aria-required="true" required>
             <option value="single" class="lang-en">Single Cabin Berth (€4,000)</option>
             <option value="double" class="lang-en">Shared Double Cabin (€7,000 for 2 guests)</option>
             <option value="group" class="lang-en">Booking with Friends (Multiple cabins)</option>
@@ -694,7 +871,8 @@
             <span class="lang-en">Experience Level</span>
             <span class="lang-de">Vorerfahrung</span>
           </label>
-          <select id="experience-level" name="experience_level" aria-label="Experience Level" aria-labelledby="experience-level-label" aria-required="true" required>
+          <select id="experience-level" name="experience_level" aria-label="Experience Level"
+            aria-labelledby="experience-level-label" aria-required="true" required>
             <option value="beginner" class="lang-en">Complete Beginner (Ready to learn)</option>
             <option value="intermediate" class="lang-en">Some Watersports (Windsurf, SUP, Skiing)</option>
             <option value="advanced" class="lang-en">Experienced E-Foiler or Sailor</option>
@@ -704,7 +882,8 @@
           </select>
         </div>
 
-        <button type="submit" class="btn btn-hero" style="width: 100%; margin-top: 14px; font-size: 18px; padding: 16px;">
+        <button type="submit" class="btn btn-hero"
+          style="width: 100%; margin-top: 14px; font-size: 18px; padding: 16px;">
           <span class="lang-en">Submit Request & Schedule Call</span>
           <span class="lang-de">Anfrage absenden & Vorgespräch vereinbaren</span>
           <span class="btn-arrow">&rarr;</span>
@@ -724,9 +903,9 @@
       document.body.classList.add('lang-' + lang);
       try {
         localStorage.setItem('preferred_lang', lang);
-      } catch (e) {}
+      } catch (e) { }
       document.documentElement.lang = lang;
-      
+
       if (lang === 'de') {
         document.title = 'Foil and Sail | Luxus-Segelyacht & E-Foiling Expeditionen auf Mallorca';
       } else {
@@ -734,13 +913,13 @@
       }
 
       var btns = document.querySelectorAll('.lang-btn');
-      btns.forEach(function(btn) {
+      btns.forEach(function (btn) {
         btn.classList.remove('active');
       });
       var activeBtn = document.querySelector('.btn-' + lang);
       if (activeBtn) activeBtn.classList.add('active');
 
-      ['cabin-setup', 'experience-level'].forEach(function(id) {
+      ['cabin-setup', 'experience-level'].forEach(function (id) {
         var sel = document.getElementById(id);
         if (sel) {
           var opt = sel.options[sel.selectedIndex];
@@ -756,11 +935,11 @@
       });
     }
 
-    (function() {
+    (function () {
       var stored = null;
       try {
         stored = localStorage.getItem('preferred_lang');
-      } catch (e) {}
+      } catch (e) { }
       var hash = window.location.hash;
       var search = window.location.search;
       var lang = 'en';
@@ -772,4 +951,5 @@
   </script>
 
 </body>
+
 </html>
