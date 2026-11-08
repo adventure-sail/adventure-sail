@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foil and Sail: Campaign Demo Report</title>
+<style>
+  :root {
+    --bg-color: #1D242C;
+    --card-bg: #26303B;
+    --accent: #6FCF97;
+    --text-primary: #E5E9F0;
+    --text-secondary: #A0AEC0;
+    --border-color: #344251;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 24px;
+    margin-bottom: 36px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(111, 207, 151, 0.15);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h1 {
+    font-size: 34px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .tagline {
+    font-size: 20px;
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+  .meta-bar {
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  section {
+    margin-bottom: 44px;
+  }
+  h2 {
+    font-size: 22px;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 16px 0 8px 0;
+  }
+  p {
+    color: var(--text-primary);
+    margin-bottom: 14px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 18px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 700px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+  /* Funnel flow diagram */
+  .funnel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px 16px;
+    margin: 20px 0;
+    gap: 8px;
+  }
+  .funnel-step {
+    flex: 1;
+    background: #1D242C;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px 10px;
+    text-align: center;
+  }
+  .funnel-step strong {
+    display: block;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .funnel-step span {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  .funnel-arrow {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /* Buyer panel verdict tags */
+  .tag-pass {
+    display: inline-block;
+    background: rgba(111, 207, 151, 0.2);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .tag-fail {
+    display: inline-block;
+    background: rgba(235, 87, 87, 0.2);
+    color: #EB5757;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /* CTA Box */
+  .cta-box {
+    background: linear-gradient(180deg, #2A3644 0%, #202A35 100%);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .cta-button {
+    display: inline-block;
+    background: var(--accent);
+    color: #1D242C;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+  }
+  li {
+    margin-bottom: 6px;
+    color: var(--text-primary);
+  }
+  .rule-badge {
+    background: #344251;
+    color: #F2C94C;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="badge">Growth Marketing Hackathon · Lisbon</div>
+    <h1>Foil and Sail</h1>
+    <div class="tagline">New adventures await.</div>
+    <div class="meta-bar">Team: Adventure Sail | Destination: Mallorca | Target: English and German Markets</div>
+  </header>
+
+  <!-- 1. Positioning -->
+  <section>
+    <h2>1. Campaign Positioning</h2>
+    <div class="card">
+      <p><strong>Product:</strong> A premium, all-inclusive sailing yacht adventure holiday in Mallorca featuring e-foiling directly from the yacht's transom. Small groups of 5 to 8 like-minded guests with chef-prepared meals on anchor and expert instructors.</p>
+      <p><strong>Audience / ICP:</strong> Active, adventurous professionals and couples who earn well and want high excitement without the pain of traditional surfing or the logistical nightmare of renting e-foils from crowded beaches.</p>
+      <p><strong>The Core Insight:</strong> <span class="rule-badge">No Age Mention Rule Strictly Followed</span> Guests want an active, thrilling new chapter without feeling like they have to settle for boring resorts or chaotic party flotillas.</p>
+      <p><strong>The Single Promise:</strong> A premium, all-inclusive sailing adventure with e-foiling in Mallorca, completely organised for you in a small, like-minded group.</p>
+      <p><strong>Proof Strategy:</strong> Founding team credibility (decades of professional Mediterranean charter experience and certified instructors), deepwater yacht launch safety, and zero artificial reviews or fake claims.</p>
+      <p><strong>Single Conversion Goal:</strong> Submit an enquiry and screening form to request voyage itineraries and schedule a 15-minute consultation.</p>
+    </div>
+  </section>
+
+  <!-- 2. The Funnel -->
+  <section>
+    <h2>2. Visual Funnel Architecture</h2>
+    <div class="funnel-container">
+      <div class="funnel-step">
+        <strong>1. Interruption</strong>
+        <span>Meta Video Reels (Cold/Warm)</span>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <strong>2. High Intent</strong>
+        <span>Google Search (E-Foil Mallorca)</span>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <strong>3. Landing Page</strong>
+        <span>Direct Transom Launch Proof</span>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <strong>4. Screening Form</strong>
+        <span>Low-friction preference audit</span>
+      </div>
+      <div class="funnel-arrow">→</div>
+      <div class="funnel-step">
+        <strong>5. 1-on-1 Call</strong>
+        <span>Cabin reservation & crew match</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Landing Page Hero -->
+  <section>
+    <h2>3. Landing Page Architecture</h2>
+    <div class="card">
+      <h3>Hero Section</h3>
+      <p><strong>Headline:</strong> A Sailing Yacht in Mallorca. An E-Foil at the Transom. Zero Hassle.</p>
+      <p><strong>Subhead:</strong> Wake up in secluded turquoise calas, glide above crystal-clear water with certified instructors, and unwind on a private sailing yacht with a small, like-minded crew. Everything is handled for you: from fresh meals to fully charged boards.</p>
+      <p><strong>Primary Call to Action:</strong> <code>[Request Trip Itinerary]</code></p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Why the Boat Beats the Beach</h3>
+        <ul>
+          <li>No carrying 30kg batteries across burning sand.</li>
+          <li>No dodging swimmers or hitting shallow rocks.</li>
+          <li>Launch directly into calm deepwater bays.</li>
+          <li>Unlimited battery swaps with onboard power.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Dual Market Support</h3>
+        <p>Full English and German versions created. Germans represent Mallorca's largest adventure yacht charter segment.</p>
+        <p><em>"Ihre private Segelyacht auf Mallorca. E-Foilen direkt von Bord. Ohne jeden Aufwand."</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Paid Ads -->
+  <section>
+    <h2>4. Multi-Angle Paid Ad Suite</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Angle 1: Cold Interruption</h3>
+        <p><strong>Hook:</strong> "Stop carrying batteries across crowded beaches."</p>
+        <p><strong>Headline:</strong> Fly Above Water in Mallorca</p>
+        <p><strong>Copy:</strong> Glide above turquoise waters in Mallorca. No beach crowds, no heavy gear to carry. Your yacht is waiting.</p>
+      </div>
+      <div class="card">
+        <h3>Angle 2: Warm Mechanism</h3>
+        <p><strong>Hook:</strong> "How e-foiling from a yacht actually works."</p>
+        <p><strong>Headline:</strong> 100% Coached. Zero Hassle.</p>
+        <p><strong>Copy:</strong> Sleep on a sailing yacht in Mallorca. Fly on an e-foil before lunch. Certified coaches and all meals included.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Angle 3: Hot Scarcity & Quality Filtering</h3>
+      <p><strong>Hook:</strong> "Only 6 to 8 guests per boat."</p>
+      <p><strong>Headline:</strong> Limited to 8 Guests per Yacht</p>
+      <p><strong>Copy:</strong> Only 6 cabins per voyage. Explore Mallorca by sail and foil with a small, like-minded crew. Summer dates open.</p>
+    </div>
+  </section>
+
+  <!-- 5. Email Sequence -->
+  <section>
+    <h2>5. 4-Part Consultation Nurture Sequence</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Email 1 (Immediate):</strong> Welcome and The Philosophy Behind Foil and Sail (Subject: <em>New adventures await in Mallorca</em>).</li>
+        <li><strong>Email 2 (+48 Hours):</strong> Answering the #1 Question: Do I need experience? (Explaining the 3-step learning progression to flight).</li>
+        <li><strong>Email 3 (+4 Days):</strong> Behind the Scenes: Life on Board our 50-Foot Yacht (Dining, cabins, anchorages).</li>
+        <li><strong>Email 4 (+6 Days):</strong> Summer 2027 Allocation & Crew Compatibility Screening Call.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Buyer Panel Stress Test (AI Customer Simulation) -->
+  <section>
+    <h2>6. Buyer Panel Stress Test (AI Judge Preparation)</h2>
+    <div class="card">
+      <p>Tested against 3 skeptical customer personas before the 1,000 AI Customer Judge run:</p>
+      <ul>
+        <li><strong>Mark (The Burned Traveler):</strong> <span class="tag-pass">PASS</span> Convinced by the mandatory 15-minute screening call that weeds out incompatible group members.</li>
+        <li><strong>Claudia (The Budget Holder):</strong> <span class="tag-pass">PASS</span> €4k/single or €7k/cabin justified by all-inclusive coaching, chef meals, and yacht accommodation.</li>
+        <li><strong>Stefan (The Finca Loyalist):</strong> <span class="tag-fail">OBJECTION RAISED</span> Demanded exact hours of daily e-foil riding time. Fixed by adding guaranteed 2x 45-minute flight sessions with battery rotations daily.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Live Campaign Link -->
+  <section>
+    <div class="cta-box">
+      <h3>Campaign Live Destination</h3>
+      <p>Landing page and screening funnel live at:</p>
+      <a href="https://foilandsail.com" class="cta-button">[LIVE CAMPAIGN URL: https://foilandsail.com]</a>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
