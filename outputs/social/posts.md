@@ -213,3 +213,4 @@ Hot take: E-foiling is 10x better than surfing for anyone with busy weeks and ac
 8. **Proof:** 50 feet of ocean cruiser, unlimited freshly charged batteries, and a certified instructor on every departure.
 9. **Contrarian:** Luxury is not a five-star hotel lobby. Luxury is an empty bay in Mallorca with five friends and a calm sea.
 10. **Outcome:** A full week of offshore sailing and hydrofoil flight with zero planning headaches.
+
