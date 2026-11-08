@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foil and Sail | Premium Sailing Yacht & E-Foiling Expeditions in Mallorca</title>
   <meta name="description" content="All-inclusive sailing adventure holiday based on a private yacht in Mallorca. E-foil directly from the boat with certified instructors in secluded bays.">
+  <meta property="og:title" content="Foil and Sail | Premium Sailing Yacht & E-Foiling in Mallorca">
+  <meta property="og:description" content="A 50ft sailing yacht in Mallorca. An e-foil at the transom. Zero hassle. All-inclusive luxury ocean adventure for small crews of 6 to 8 guests.">
+  <meta property="og:image" content="https://adventure-sail.github.io/outputs/creative/hero-header.webp">
+  <meta property="og:url" content="https://adventure-sail.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Foil and Sail | Mallorca Sailing & E-Foiling">
+  <meta name="twitter:description" content="Sleep on a 50ft yacht, launch e-foils into deep turquoise bays, chef meals on anchor. No beach crowds.">
+  <meta name="twitter:image" content="https://adventure-sail.github.io/outputs/creative/hero-header.webp">
   <link rel="preconnect" href="https://cdn.grona.ai">
   <script src="https://cdn.grona.ai/workspaces/6af09567bbff17cee2159ff9/main.js" async></script>
   <style>
@@ -339,6 +348,27 @@
     </div>
   </section>
 
+  <section id="story" class="container" style="padding-top: 0;">
+    <h2 class="section-title">Expedition Spotlight: 7 Days in Mallorca Waters</h2>
+    <p class="section-desc">What a typical week on board looks like: from the secluded coves of Cabrera to the cliffs of the Tramuntana.</p>
+    
+    <div class="card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; align-items: center;">
+      <div>
+        <h3 style="font-size: 22px; color: var(--primary); margin-bottom: 12px;">A Floating Sanctuary with Real Flight</h3>
+        <p style="color: var(--text-muted); margin-bottom: 14px;">"We anchored on the south coast of Mallorca in a limestone bay with water so clear you could see the anchor chain resting in 8 meters of white sand. Within 20 minutes of waking up, our instructor had two e-foils floating at the swim platform."</p>
+        <p style="color: var(--text-muted); margin-bottom: 16px;">Whether you join as a solo traveler looking for an active, social crew or as a couple seeking a private double cabin, the rhythm of sailing and morning flight creates an unforgettable sense of freedom.</p>
+        <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 600; color: var(--accent);">
+          <div>✓ 2x Daily Foil Sessions</div>
+          <div>✓ 50+ Nautical Miles Sailed</div>
+          <div>✓ Max 8 Guests</div>
+        </div>
+      </div>
+      <div>
+        <img src="outputs/creative/hero-ad.png" alt="Foil and Sail Experience" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
+      </div>
+    </div>
+  </section>
+
   <section id="faq" class="container" style="padding-top: 0;">
     <h2 class="section-title">Frequently Asked Questions</h2>
     <p class="section-desc">Clear answers to the most common questions before applying.</p>
@@ -357,6 +387,16 @@
       <h4>What happens if conditions get choppy or windy?</h4>
       <p>Mallorca offers dozens of protected, deepwater calas on different sides of the island. Our skippers choose sheltered anchorages with mirror-flat water for morning foil flights, and use the afternoon sea breezes for open-water sailing.</p>
     </div>
+
+    <div class="faq-item">
+      <h4>What about seasickness and comfort aboard?</h4>
+      <p>Modern 50-foot cruising yachts are heavy, stable ocean vessels. We spend our nights anchored in calm, protected bays with zero ocean swell. For daytime sailing, we carry premium prevention remedies and keep coastal legs manageable.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What meals and drinks are included?</h4>
+      <p>All-inclusive chef-prepared breakfasts, fresh Mediterranean lunches on anchor, snacks, and selected local Balearic wines are included. You can enjoy quiet dinners on deck under the stars or step ashore with the crew at coastal harbors.</p>
+    </div>
   </section>
 
   <section id="enquiry" class="container" style="padding-top: 0;">
@@ -366,31 +406,31 @@
       
       <form onsubmit="event.preventDefault(); alert('Thank you! Your itinerary request and preference details have been submitted. Our team will contact you within 24 hours to schedule your screening conversation.');">
         <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Markus Weber" required>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full_name" placeholder="Markus Weber" aria-required="true" required>
         </div>
         <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="markus@example.com" required>
+          <label for="email-address">Email Address</label>
+          <input type="email" id="email-address" name="email" placeholder="markus@example.com" aria-required="true" required>
         </div>
         <div class="form-group">
-          <label>Phone Number (for SMS confirmation)</label>
-          <input type="tel" placeholder="+49 170 1234567" required>
+          <label for="phone-number">Phone Number (for SMS confirmation)</label>
+          <input type="tel" id="phone-number" name="phone" placeholder="+49 170 1234567" aria-required="true" required>
         </div>
         <div class="form-group">
-          <label>Preferred Cabin Setup</label>
-          <select>
-            <option>Single Cabin Berth (€4,000)</option>
-            <option>Shared Double Cabin (€7,000 for 2 guests)</option>
-            <option>Booking with Friends (Multiple cabins)</option>
+          <label for="cabin-setup">Preferred Cabin Setup</label>
+          <select id="cabin-setup" name="cabin_setup" aria-required="true" required>
+            <option value="single">Single Cabin Berth (€4,000)</option>
+            <option value="double">Shared Double Cabin (€7,000 for 2 guests)</option>
+            <option value="group">Booking with Friends (Multiple cabins)</option>
           </select>
         </div>
         <div class="form-group">
-          <label>Experience Level</label>
-          <select>
-            <option>Complete Beginner (Ready to learn)</option>
-            <option>Some Watersports (Windsurf, SUP, Skiing)</option>
-            <option>Experienced E-Foiler or Sailor</option>
+          <label for="experience-level">Experience Level</label>
+          <select id="experience-level" name="experience_level" aria-required="true" required>
+            <option value="beginner">Complete Beginner (Ready to learn)</option>
+            <option value="intermediate">Some Watersports (Windsurf, SUP, Skiing)</option>
+            <option value="advanced">Experienced E-Foiler or Sailor</option>
           </select>
         </div>
         <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Submit Request & Schedule Call</button>
