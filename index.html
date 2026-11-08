@@ -139,22 +139,69 @@
       font-weight: 400;
     }
     .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      font-weight: 700;
-      font-size: 17px;
-      padding: 15px 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #2ED8B6 0%, #1FA386 100%);
+      color: #0B2135;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 13px 30px;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.2s, transform 0.1s;
-      box-shadow: 0 4px 14px rgba(40, 180, 152, 0.4);
-      border: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 16px rgba(32, 167, 139, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       cursor: pointer;
     }
     .btn:hover {
-      background: var(--accent-hover);
-      transform: translateY(-1px);
+      background: linear-gradient(135deg, #42ECC7 0%, #25B89B 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(32, 167, 139, 0.5);
+      color: #071725;
+    }
+    .btn-hero {
+      font-size: 20px;
+      font-weight: 800;
+      padding: 18px 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #32E7C3 0%, #18A889 100%);
+      color: #081D30;
+      box-shadow: 0 10px 32px rgba(46, 216, 182, 0.5), 0 2px 4px rgba(0, 0, 0, 0.2);
+      letter-spacing: 0.3px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      position: relative;
+    }
+    .btn-hero:hover {
+      background: linear-gradient(135deg, #4CF9D2 0%, #22BA97 100%);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 16px 42px rgba(46, 216, 182, 0.65), 0 4px 8px rgba(0, 0, 0, 0.25);
+      color: #051421;
+    }
+    .btn-hero .btn-arrow {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+      line-height: 1;
+    }
+    .btn-hero:hover .btn-arrow {
+      transform: translateX(5px);
+    }
+    .hero-cta-container {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .hero-cta-trust {
+      font-size: 13px;
+      color: #CBD5E1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
     }
     .container {
       max-width: 1040px;
@@ -302,10 +349,17 @@
     <p class="hero-sub lang-en">Wake up in secluded turquoise calas, glide above crystal-clear water with certified coaches, and unwind on a private 50ft sailing yacht with a small crew of 6 to 8 like-minded guests. All-inclusive luxury adventure.</p>
     <p class="hero-sub lang-de">Wachen Sie in einsamen türkisfarbenen Buchten auf, gleiten Sie mit zertifizierten Coaches über kristallklares Wasser und entspannen Sie auf einer 50-Fuß-Segelyacht mit 6 bis 8 Gleichgesinnten. All-inclusive-Abenteuer der Extraklasse.</p>
     
-    <a href="#enquiry" class="btn">
-      <span class="lang-en">Request Trip Itinerary</span>
-      <span class="lang-de">Reiseroute anfordern</span>
-    </a>
+    <div class="hero-cta-container">
+      <a href="#enquiry" class="btn btn-hero">
+        <span class="lang-en">Request Trip Itinerary</span>
+        <span class="lang-de">Reiseroute anfordern</span>
+        <span class="btn-arrow">&rarr;</span>
+      </a>
+      <div class="hero-cta-trust">
+        <span class="lang-en">Strictly limited to 6 to 8 guests &middot; 15-min consultation before booking</span>
+        <span class="lang-de">Streng limitiert auf 6 bis 8 Gäste &middot; Unverbindliches 15-Minuten-Vorgespräch</span>
+      </div>
+    </div>
   </section>
 
   <!-- Atmosphere Visual Cards -->
@@ -636,9 +690,10 @@
           </select>
         </div>
 
-        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">
+        <button type="submit" class="btn btn-hero" style="width: 100%; margin-top: 14px; font-size: 18px; padding: 16px;">
           <span class="lang-en">Submit Request & Schedule Call</span>
           <span class="lang-de">Anfrage absenden & Vorgespräch vereinbaren</span>
+          <span class="btn-arrow">&rarr;</span>
         </button>
       </form>
     </div>
