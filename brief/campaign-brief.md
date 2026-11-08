@@ -47,7 +47,7 @@ German-speaking professionals and active couples (Germans represent the largest 
 
 ## Landing page URL
 
-https://foilandsail.com
+https://stalwart-paletas-9a8a4e.netlify.app
 
 ## Competitors
 
