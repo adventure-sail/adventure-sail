@@ -116,3 +116,4 @@ Request your voyage itinerary and screening consultation today.
 ## Landing note
 
 All ad variants link directly to the enquiry and itinerary request page: https://foilandsail.com/enquiry
+

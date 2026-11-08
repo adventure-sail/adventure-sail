@@ -53,3 +53,4 @@
 ### Objection 3: Bad Weather & Alternative Activities
 * **Quoted Line:** *"Wake up in secluded turquoise calas..."*
 * **The Fix:** Add a line on flexibility: *"Protected bay itineraries, scenic coastal hiking excursions, and Mallorca sheltered anchorages ensure continuous activity even if offshore swells pick up."*
+

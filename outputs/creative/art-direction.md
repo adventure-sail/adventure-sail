@@ -19,3 +19,4 @@ Point-of-view perspective looking down from the teak swim platform of a sailing 
 
 ### Visual 3: Sunset Deck Gathering
 A small group of 5 to 6 active adults relaxing around the cockpit table of a sailing yacht at golden hour. Mediterranean appetizers and wine glasses on the table, warm laughter, wet hair from a day in the sea, sun dipping below the Balearic horizon.
+
